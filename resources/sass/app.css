@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "RedHatDisplay-Regular";
+  src: url("../font/RedHatDisplay/RedHatDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-Italic";
+  src: url("../font/RedHatDisplay/RedHatDisplay-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-Medium";
+  src: url("../font/RedHatDisplay/RedHatDisplay-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-MediumItalic";
+  src: url("../font/RedHatDisplay/RedHatDisplay-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-Bold";
+  src: url("../font/RedHatDisplay/RedHatDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-BoldItalic";
+  src: url("../font/RedHatDisplay/RedHatDisplay-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-Black";
+  src: url("../font/RedHatDisplay/RedHatDisplay-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatDisplay-BlackItalic";
+  src: url("../font/RedHatDisplay/RedHatDisplay-BlackItalic.ttf") format("truetype");
+}
+
+body {
+  font-family: "RedHatDisplay-Regular";
+}
+
+.navbar {
+  background-color: #005baa;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: RedHatDisplay-Medium;
+  font-size: 1.1rem;
+  color: #ffffff;
+  padding: 8px 1rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

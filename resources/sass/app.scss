@@ -1,0 +1,35 @@
+$primary: #005baa;
+$fonts: "RedHatDisplay-Regular", "RedHatDisplay-Italic", "RedHatDisplay-Medium",
+    "RedHatDisplay-MediumItalic", "RedHatDisplay-Bold",
+    "RedHatDisplay-BoldItalic", "RedHatDisplay-Black",
+    "RedHatDisplay-BlackItalic";
+
+@each $font in $fonts {
+    @font-face {
+        font-family: $font;
+        src: url("../font/RedHatDisplay/" + $font + ".ttf") format("truetype");
+    }
+}
+
+body {
+    font-family: "#{nth($fonts, 1)}";
+}
+
+.navbar {
+    background-color: $primary;
+
+    .navbar-nav {
+        .nav-link {
+			font-family: #{nth($fonts, 3)};
+			font-size: 1.1rem;
+            color: #ffffff;
+            padding: 8px 1rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1250px;
+    }
+}
